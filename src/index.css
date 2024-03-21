@@ -1,13 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* html{
+  font-size: 10px;
+} */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Exo2__font {
+  font-family: "Exo 2";
+}
+.linearBg {
+  background: rgb(234, 14, 104);
+  background: linear-gradient(
+    180deg,
+    rgba(234, 14, 104, 1) 81%,
+    rgba(243, 18, 32, 1) 100%
+  );
+}
+
+.linearBg__Text {
+  background: linear-gradient(96deg, #ea0e68 6.64%, #f31220 94.37%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.odlerPrice{
+  text-decoration-line: strikethrough;
 }
