@@ -13,53 +13,98 @@ import ProductImg8 from "../assets/ProductImg8.png";
 import StateIcon from "../assets/stateIcon.svg";
 import HaflStateIcon from "../assets/HaflStateIcon.svg";
 
-const stateList = [StateIcon, StateIcon, StateIcon, StateIcon,HaflStateIcon];
+const stateList = [StateIcon, StateIcon, StateIcon, StateIcon, HaflStateIcon];
 
 const ProductImgList = [
-    ProductImg1,
-    ProductImg2,
-    ProductImg3,
-    ProductImg4,
-    ProductImg5,
-    ProductImg6,
-    // ProductImg7,
-    ProductImg8
-]
+  {
+    imageURL: ProductImg1,
+    title: "Anl-esport bluetooth controller",
+    newPrice: 20,
+    oldPrice: 30,
+  },
+  {
+    imageURL: ProductImg2,
+    title: "Iphone 14 pro max",
+    newPrice: 599,
+    oldPrice: 899,
+  },
+  {
+    imageURL: ProductImg3,
+    title: "Firebolt smartwatch V3",
+    newPrice: 50,
+    oldPrice: 100,
+  },
+  {
+    imageURL: ProductImg4,
+    title: "OnePlus Nord Buds 2 TWS",
+    newPrice: 70,
+    oldPrice: 120,
+  },
+  {
+    imageURL: ProductImg5,
+    title: "Noise Buds VS104 tws",
+    newPrice: 20,
+    oldPrice: 25,
+  },
+  {
+    imageURL: ProductImg6,
+    title: "Senhiesser cx-150",
+    newPrice: 599,
+    oldPrice: 899,
+  },
+  {
+    imageURL: ProductImg7,
+    title: "Apple 20W USB-C Power Adapter",
+    newPrice: 15,
+    oldPrice: 20,
+  },
+  {
+    imageURL: ProductImg8,
+    title: "Samsung Galaxy S24 Plus 5G",
+    newPrice: 1499,
+    oldPrice: 1799,
+  },
+];
 
 export const ProductList = () => {
   return (
-    <div>
+    <div className="h-screen">
       <div className="w-[90%] h-full mx-auto p-3 my-5">
         <h2 className="linearBg__Text Exo2__font font-[700] text-2xl ">
           Explore Our Products
         </h2>
-        <div className="grid grid-cols-4 gap-5 mt-7">
-        {
-            ProductImgList.map((img,id)=>(
-
-          <div key={id}>
-            <div className="bg-[#E9E9E9] flex justify-center items-center py-10">
-              <img
-                className="w-[60%]"
-                src={img}
-                alt="Product Image-1"
-              />
-            </div>
-            <div className="p-3">
-              <div className="flex justify-start items-center">
-                {stateList.map((item, index) => (
-                  <img src={item} key={index} />
-                ))}               
+        <div className="grid grid-cols-4 gap-3 mt-5 h-[92%]">
+          {ProductImgList.map((cur, id) => (
+            <div className="w-full h-full flex flex-col justify-center items-center">
+              <div className="w-full h-[70%] bg-[#E9E9E9] flex justify-center items-center">
+                <div className="w-[80%] h-[80%]  flex justify-center items-center">
+                  <img
+                    className="h-52 w-52 object-contain"
+                    alt={`Product Image-${id}`}
+                    src={cur.imageURL}
+                  />
+                </div>
               </div>
-              <h3 className="text-sm my-1 font-[400] text-[#000] Exo2__font">Anl-esport bluetooth controller</h3>
-              <div className="flex justify-start items-center gap-3">
-                <h2 className="text-md font-[700] text-[#000] Exo2__font">$20</h2>
-                <h2 className="text-md font-[400] text-[#303030] Exo2__font odlerPrice">$20</h2>
+              <div className="w-full h-[30%] p-2">
+                <div className="flex justify-start items-center">
+                  {stateList.map((state, id) => (
+                    <img src={state} alt={`Product stateImg-${id}`} />
+                  ))}
+                </div>
+                <h3 className="text-sm my-1 font-[400] text-[#000] Exo2__font">
+                  {cur.title}
+                </h3>
+                <div className="flex justify-start items-center gap-3">
+                  <h2 className="text-md font-[700] text-[#000] Exo2__font">
+                    ${cur.newPrice}
+                  </h2>
+                  <h2 className="text-md font-[400] text-[#303030] Exo2__font odlerPrice">
+                    ${cur.oldPrice}
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
-            ))
-        }
+          ))}
         </div>
       </div>
     </div>

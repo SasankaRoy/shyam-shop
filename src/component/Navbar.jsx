@@ -30,7 +30,7 @@ export const Navbar = () => {
               {["Home", "Shop", "About Us", "Contact Us", "Blogs"].map(
                 (cur, id) => (
                   <li key={id}>
-                    <a href="#" className="Exo2__font text-lg font-[500]">
+                    <a href="/" className="Exo2__font text-lg font-[500]">
                       {cur}
                     </a>
                   </li>
@@ -50,10 +50,10 @@ export const Navbar = () => {
             </div>
             <div className="flex justify-center items-center gap-6">
               <button>
-                <img src={LikeIcon} />
+                <img src={LikeIcon} alt="LikeIcon" />
               </button>
               <button>
-                <img src={CartIcon} />
+                <img src={CartIcon} alt="CartIcon" />
               </button>
               <button className="bg-[#0EEA90] text-white  px-5 py-2 rounded-3xl Exo2__font font-[700]">
                 Account
