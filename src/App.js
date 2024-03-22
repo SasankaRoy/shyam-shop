@@ -7,6 +7,7 @@ import { CatagoryList } from "./component/CatagoryList";
 import { ProductList } from "./component/ProductList";
 import { Banner } from "./component/Banner";
 import { BestDeals } from "./component/BestDeals";
+import { FeatureProduct } from "./component/FeatureProduct";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ProductList />
       <Banner />
       <BestDeals />
+      <FeatureProduct />
     </>
   );
 }
