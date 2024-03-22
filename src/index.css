@@ -65,3 +65,7 @@ code {
 .hideScrollBar::-webkit-scrollbar{
  display: none; 
 }
+
+.bestDealLinearBg{
+  background: linear-gradient(251deg, #BDF7FF 0%, #E2FBFF 31.57%, #DEFBFF 100%);
+}

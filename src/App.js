@@ -6,6 +6,7 @@ import { Hero } from "./component/Hero";
 import { CatagoryList } from "./component/CatagoryList";
 import { ProductList } from "./component/ProductList";
 import { Banner } from "./component/Banner";
+import { BestDeals } from "./component/BestDeals";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <CatagoryList />
       <ProductList />
       <Banner />
+      <BestDeals />
     </>
   );
 }
