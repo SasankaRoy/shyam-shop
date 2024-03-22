@@ -32,7 +32,7 @@ const catagoryImgList = [
 
 export const CatagoryList = () => {
   return (
-    <div className="h-[53dvh]">
+    <div className="h-[53dvh] mt-20">
       <div className="w-[90%] h-full mx-auto p-3 my-5">
         <h2 className="linearBg__Text Exo2__font font-[700] text-2xl ">
           Shop by catagory
@@ -42,14 +42,14 @@ export const CatagoryList = () => {
             <motion.div
               key={id}
               initial={{
-                y: -100,
+                y: -140,
                 opacity: 0,
               }}
               whileInView={{
                 y: 0,
                 opacity: 1,
               }}
-              transition={{ duration: 1.1, delay: item.delay }}
+              transition={{ duration: item.delay,ease:'backOut'  }}
               className="relative w-full h-full"
             >
               <img
