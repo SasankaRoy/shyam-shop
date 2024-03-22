@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* html{
   font-size: 10px;
 } */
@@ -42,6 +41,23 @@ code {
   -webkit-background-clip: text;
 }
 
-.odlerPrice{
+.odlerPrice {
   text-decoration-line: strikethrough;
+}
+
+.ProductListBtnlinearBg {
+  background: linear-gradient(223deg, #0eea90 14.52%, #00c072 82.72%);
+}
+
+.bannerLinearBg {
+  background: rgb(234, 14, 104);
+  background: linear-gradient(
+    189deg,
+    rgba(234, 14, 104, 1) 20%,
+    rgba(243, 18, 32, 1) 100%
+  );
+}
+
+.dropShadowCustom{
+  filter: drop-shadow(-2px -4px 7px  rgba(0,0,0,.5));
 }
