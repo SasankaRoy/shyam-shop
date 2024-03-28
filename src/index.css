@@ -58,14 +58,25 @@ code {
   );
 }
 
-.dropShadowCustom{
-  filter: drop-shadow(-2px -4px 7px  rgba(0,0,0,.5));
+.dropShadowCustom {
+  filter: drop-shadow(-2px -4px 7px rgba(0, 0, 0, 0.5));
 }
 
-.hideScrollBar::-webkit-scrollbar{
- display: none; 
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
 }
 
-.bestDealLinearBg{
-  background: linear-gradient(251deg, #BDF7FF 0%, #E2FBFF 31.57%, #DEFBFF 100%);
+.bestDealLinearBg {
+  background: linear-gradient(251deg, #bdf7ff 0%, #e2fbff 31.57%, #defbff 100%);
+}
+
+.productPreviewBg {
+ background-image: url(assets/ProductPreviewBg.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.productPreviewBg2 {
+ background-image: url(assets/ProductPreviewBg2.png);
+ background-size: cover;
+ background-repeat: no-repeat;
 }
