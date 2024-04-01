@@ -30,21 +30,24 @@ const dummyData = [
     EllipseInner,
     HeadPhone: HeadPhone1,
     Shape: Shape1,
-    color: "#F31220",
+    // color: "#F31220",
+    color: "linear-gradient(223deg, #F31220 14.52%, #F31220 82.72%)",
   },
   {
     EllipseOut: EllipseOut2,
     EllipseInner: EllipseInner2,
     HeadPhone: HeadPhone2,
     Shape: Shape2,
-    color: "#00C072",
+    // color: "#00C072",
+    color: "linear-gradient(223deg, #0EEA90 14.52%, #00C072 82.72%)",
   },
   {
     EllipseOut: EllipseOut3,
     EllipseInner: EllipseInner3,
     HeadPhone: HeadPhone3,
     Shape: Shape2,
-    color: "#D2D2D9",
+    // color: "#D2D2D9",
+    color: "linear-gradient(223deg, #C8C8C8 14.52%, #414141 82.72%)",
   },
 ];
 
@@ -75,14 +78,19 @@ const ImageCarousel = ({ images }) => {
               animate={{ y: 0 }}
               exit={{ y: 100 }}
               transition={{
-                duration: 0.1,
+                duration: 0.4,
               }}
               className="flex-1 h-full flex flex-col justify-center items-start"
             >
               <img src={Dbpulse} alt="Dbpulse" />
               <h1 className="font-[700] Exo2__font text-5xl my-6">
                 The{" "}
-                <span style={{ color: images[selectedImageIndex].color }}>
+                <span style={{                   
+                  background: images[selectedImageIndex].color,
+                  backgroundClip: 'text',
+                  webkitBackgroundClip: 'text',
+                  webkitTextFillColor: 'transparent',
+                   }}>
                   ultimate listening
                 </span>{" "}
                 experience
@@ -138,8 +146,9 @@ const ImageCarousel = ({ images }) => {
                 alt="HeadPhone1"
                 key={selectedImageIndex}
                 initial={{ x: 150, y: -180 }}
-                animate={{ x: 0, y: 0 }}
+                animate={{ x: 0, y: 0 }}                
                 exit={{ x: -150, y: 180 }}
+                transition={{duration:.7,ease:'backOut',}}
               />
   
               <motion.img
