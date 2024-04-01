@@ -81,3 +81,7 @@ code {
  background-size: cover;
  background-repeat: no-repeat;
 }
+
+.footerBglinear{
+  background: linear-gradient(181deg, #EA0E68 0.74%, #F31220 103.2%);
+}

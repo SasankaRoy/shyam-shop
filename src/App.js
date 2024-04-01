@@ -9,6 +9,7 @@ import { Banner } from "./component/Banner";
 import { BestDeals } from "./component/BestDeals";
 import { FeatureProduct } from "./component/FeatureProduct";
 import { BlogList } from "./component/BlogList";
+import { Footer } from "./component/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <BestDeals />
       <FeatureProduct />
       <BlogList />
+      <Footer />
     </>
   );
 }
