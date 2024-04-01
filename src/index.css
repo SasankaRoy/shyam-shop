@@ -35,7 +35,8 @@ code {
 }
 
 .linearBg__Text {
-  background: linear-gradient(96deg, #ea0e68 6.64%, #f31220 94.37%);
+  /* background: linear-gradient(96deg, #ea0e68 6.64%, #f31220 94.37%); */
+  background: linear-gradient(96deg, #EA0E68 6.64%, #F31220 94.37%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;

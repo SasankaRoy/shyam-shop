@@ -8,6 +8,7 @@ import { ProductList } from "./component/ProductList";
 import { Banner } from "./component/Banner";
 import { BestDeals } from "./component/BestDeals";
 import { FeatureProduct } from "./component/FeatureProduct";
+import { BlogList } from "./component/BlogList";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Banner />
       <BestDeals />
       <FeatureProduct />
+      <BlogList />
     </>
   );
 }

@@ -80,7 +80,7 @@ export const ProductList = () => {
                 <div className="w-[80%] h-[80%]  flex justify-center items-center">
                   <img
                     className="h-48 w-48 object-contain"
-                    alt={`Product Image-${id}`}
+                    alt={`Product-${id}`}
                     src={cur.imageURL}
                   />
                 </div>

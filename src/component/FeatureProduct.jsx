@@ -6,6 +6,8 @@ import StateIcon from "../assets/stateIcon.svg";
 import HaflStateIcon from "../assets/HaflStateIcon.svg";
 import ProductImg7 from "../assets/ProductImg7.png";
 import ProductImg8 from "../assets/ProductImg8.png";
+import ProductImg5 from "../assets/ProductImg5.png";
+import ProductImg6 from "../assets/ProductImg6.png";
 
 const stateList = [StateIcon, StateIcon, StateIcon, StateIcon, HaflStateIcon];
 
@@ -23,6 +25,23 @@ const ProductImgList = [
     oldPrice: 1799,
   },
 ];
+
+const ProductImgList2 = [
+  {
+    imageURL: ProductImg5,
+    title: "Noise Buds VS104 tws",
+    newPrice: 20,
+    oldPrice: 25,
+  },
+  {
+    imageURL: ProductImg6,
+    title: "Senhiesser cx-150",
+    newPrice: 599,
+    oldPrice: 899,
+  },
+]
+
+
 
 export const FeatureProduct = () => {
   return (
@@ -70,7 +89,7 @@ export const FeatureProduct = () => {
                   <div className="w-[80%] h-[80%]  flex justify-center items-center">
                     <img
                       className="h-48 w-48 object-contain"
-                      alt={`Product Image-${id}`}
+                      alt={`Product-${id}`}
                       src={cur.imageURL}
                     />
                   </div>
@@ -101,13 +120,13 @@ export const FeatureProduct = () => {
         {/* <div className="w-[50%]  bg-cyan-500">the right div</div> */}
         <div className="w-[50%] h-full flex flex-col justify-center items-center gap-5">
           <div className="grid grid-cols-2 gap-4 w-full h-[25%]">
-            {ProductImgList.map((cur, id) => (
+            {ProductImgList2.map((cur, id) => (
               <div className="w-full h-full flex flex-col justify-center items-center">
                 <div className="w-full h-[70%] bg-[#E9E9E9] flex justify-center items-center">
                   <div className="w-[80%] h-[80%]  flex justify-center items-center">
                     <img
                       className="h-48 w-48 object-contain"
-                      alt={`Product Image-${id}`}
+                      alt={`Product-${id}`}
                       src={cur.imageURL}
                     />
                   </div>

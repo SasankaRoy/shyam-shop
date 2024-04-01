@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 import HeroBg from "../assets/heroBg.png";
 import Dbpulse from "../assets/DB-PULSE.png";
@@ -50,7 +50,7 @@ const dummyData = [
 
 
 
-const images = [HeadPhone1, HeadPhone2, HeadPhone3];
+// const images = [HeadPhone1, HeadPhone2, HeadPhone3];
 
 const ImageCarousel = ({ images }) => {
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
