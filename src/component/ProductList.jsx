@@ -12,66 +12,18 @@ import ProductImg8 from "../assets/ProductImg8.png";
 
 import StateIcon from "../assets/stateIcon.svg";
 import HaflStateIcon from "../assets/HaflStateIcon.svg";
+import { ProductImgList } from "../dummyData";
 
 const stateList = [StateIcon, StateIcon, StateIcon, StateIcon, HaflStateIcon];
 
-const ProductImgList = [
-  {
-    imageURL: ProductImg1,
-    title: "Anl-esport bluetooth controller",
-    newPrice: 20,
-    oldPrice: 30,
-  },
-  {
-    imageURL: ProductImg2,
-    title: "Iphone 14 pro max",
-    newPrice: 599,
-    oldPrice: 899,
-  },
-  {
-    imageURL: ProductImg3,
-    title: "Firebolt smartwatch V3",
-    newPrice: 50,
-    oldPrice: 100,
-  },
-  {
-    imageURL: ProductImg4,
-    title: "OnePlus Nord Buds 2 TWS",
-    newPrice: 70,
-    oldPrice: 120,
-  },
-  {
-    imageURL: ProductImg5,
-    title: "Noise Buds VS104 tws",
-    newPrice: 20,
-    oldPrice: 25,
-  },
-  {
-    imageURL: ProductImg6,
-    title: "Senhiesser cx-150",
-    newPrice: 599,
-    oldPrice: 899,
-  },
-  {
-    imageURL: ProductImg7,
-    title: "Apple 20W USB-C Power Adapter",
-    newPrice: 15,
-    oldPrice: 20,
-  },
-  {
-    imageURL: ProductImg8,
-    title: "Samsung Galaxy S24 Plus 5G",
-    newPrice: 1499,
-    oldPrice: 1799,
-  },
-];
 
-export const ProductList = () => {
+
+export const ProductList = ({ title }) => {
   return (
     <div className="h-screen">
       <div className="w-[90%] h-full mx-auto p-3 my-5">
         <h2 className="linearBg__Text Exo2__font font-[700] text-2xl ">
-          Explore Our Products
+          {title}
         </h2>
         <div className="grid grid-cols-4 gap-3 mt-5 h-[80%]">
           {ProductImgList.map((cur, id) => (
@@ -106,10 +58,11 @@ export const ProductList = () => {
             </div>
           ))}
         </div>
-
-        <button className="ProductListBtnlinearBg shadow-md text-[#fff] text-md font-[700] my-5 px-4 py-2 rounded-[52px] Exo2__font">
-          Show more
-        </button>
+        {title == "Explore Our Products" && (
+          <button className="ProductListBtnlinearBg shadow-md text-[#fff] text-md font-[700] my-5 px-4 py-2 rounded-[52px] Exo2__font">
+            Show more
+          </button>
+        )}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ import { FeatureProduct } from "./component/FeatureProduct";
 import { BlogList } from "./component/BlogList";
 import { Footer } from "./component/Footer";
 
+
 function App() {
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
       <Navbar />
       <Hero />
       <CatagoryList />
-      <ProductList />
+      <ProductList title='Explore Our Products' />
       <Banner />
       <BestDeals />
       <FeatureProduct />

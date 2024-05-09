@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -58,6 +59,8 @@ code {
     rgba(243, 18, 32, 1) 100%
   );
 }
+
+
 
 .dropShadowCustom {
   filter: drop-shadow(-2px -4px 7px rgba(0, 0, 0, 0.5));

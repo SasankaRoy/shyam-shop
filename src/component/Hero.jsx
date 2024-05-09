@@ -71,7 +71,7 @@ const ImageCarousel = ({ images }) => {
     return (
       <AnimatePresence mode="wait" initial={false}>
         <div className="absolute top-0 left-0 z-40 w-full h-full">
-          <div className="w-[90%] h-full mx-auto flex justify-center items-center">
+          <div className="w-[90%] h-full mx-auto flex  justify-center items-center ">
             <motion.div
               key={selectedImageIndex}
               initial={{ y: -100 }}
